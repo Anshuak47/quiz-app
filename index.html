@@ -3,20 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Quiz App</title>
-    <style>
-      body {
-        background: rgb(1, 0, 15);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="main-container">
-        <p></p>
-        <h1 class="txt-center txt-white">Quiz App</h1>
+      <h1>Quiz App</h1>
+      <div id="quiz-container">
+        <div id="question-container" class="hidden">
+          <h2 id="question-text"></h2>
+          <ul id="choices-list">
+            
+          </ul>
+          <button id="next-btn" class="hidden">Next Question</button>
+        </div>
+        <div id="result-container" class="hidden">
+          <h2>Your Score:</h2>
+          <p id="score"></p>
+          <button id="restart-btn">Restart Quiz</button>
+        </div>
+        <button id="start-btn">Start Quiz</button>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
